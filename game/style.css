@@ -1,0 +1,40 @@
+/* Port Solana: Neon Heat — page chrome. The game itself is all canvas. */
+:root {
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0b0e14;
+  min-height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+#wrap {
+  width: min(100vw, 1280px);
+  padding: 12px;
+}
+canvas#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #10141d;
+  border: 1px solid #2a3040;
+  border-radius: 6px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+}
+#hint {
+  margin: 10px 2px 0;
+  color: #8d97a5;
+  font-size: 13px;
+  text-align: center;
+}
